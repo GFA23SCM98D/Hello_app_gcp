@@ -8,6 +8,6 @@ steps:
 # Deploy container image to Cloud Run
 - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
   entrypoint: gcloud
-  args: ['run', 'deploy', 'flaskHelloWorld', '--image', 'gcr.io/flaskhelloworld-405622/flaskhelloworld', '--region', 'us-central1', '--platform', 'managed','--port','80']
+  args: ['run', 'deploy', 'flaskhelloworld', '--image', 'gcr.io/flaskhelloworld-405622/flaskhelloworld', '--region', 'us-central1', '--platform', 'managed','--port','80']
 images:
 - gcr.io/flaskhelloworld-405622/flaskhelloworld
